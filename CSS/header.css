@@ -1,0 +1,32 @@
+.modal {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap:  */
+    background-color: yellow;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0 8px;
+    list-style: none;
+}
+
+header nav, header .pesquisa {
+    width: 100%;
+    flex-basis: 350px;
+}
+
+header .localizacao {
+    width:min-content;
+}
