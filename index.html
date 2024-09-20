@@ -22,7 +22,7 @@
       <div class="pesquisa">
         <div class="input">
           <input
-            type="text"
+            type="search"
             placeholder="Buscar produtos, marcas e muito mais"
           />
         </div>
@@ -43,11 +43,11 @@
       </div>
       <nav class="navbar">
         <ul class="links">
-          <li>
+          <li id="categoria">
             <a href="index.html">categorias</a>
             <span><i class="fa-solid fa-angle-down"></i></span>
           </li>
-          <div class="modal" >
+          <div class="modal" id="modal_categoria">
             <ul class="modal-link">
               <li><a href="index.html">exemplo</a></li>
               <li><a href="index.html">exemplo</a></li>
@@ -81,7 +81,7 @@
         </ul>
       </nav>
       <div class="usuario">
-        <ul class="usuario-link">
+        <ul class="usuario-link" id="favorito">
           <li>
             <span>
               <a href="index.html">
@@ -92,8 +92,8 @@
             <span><i class="fa-solid fa-angle-down"></i></span>
           </li>
           <li><a href="index.html">Compras</a></li>
-          <li><a href="index.html">Favoritos</a></li>
-          <div class="modal" >
+          <li><a href="index.html" >Favoritos</a></li>
+          <div class="modal" id="modal_favorito">
             <div class="modal-header">
               <div class="user">
                 <a href="index.html">
@@ -136,5 +136,7 @@
         </ul>
       </div>
     </header>
+
+    <script src="JavaScript/header.js"></script>
   </body>
 </html>

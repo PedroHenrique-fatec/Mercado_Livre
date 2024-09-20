@@ -9,3 +9,7 @@ body {
     margin: auto;
     font-size: 13px;
 }
+
+a {
+    text-decoration: none;
+}
