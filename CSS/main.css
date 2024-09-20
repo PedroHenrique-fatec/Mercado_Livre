@@ -1,0 +1,88 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.card {
+    width: 700px;
+    /* box-shadow: 0 0 5px black; */
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    background-color: white;
+}
+
+.card .nome-loja {
+    padding: 6px 10px;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+
+.card .nome-loja::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transform: translateX(-28px);
+    background-color: silver;
+}
+
+.card .produto {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.card .quantidade-produto {
+    display: grid;
+    place-items: center;
+
+}
+
+.card .quantidade-produto .button-quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1px silver;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.card .quantidade-produto .button-quantidade div {
+    padding: 2px 12px;
+}
+
+.card .quantidade-produto .button-quantidade button {
+    padding: 1px 9px;
+    border: none;
+    color: blue;
+    background-color: white;
+}
+
+.card .quantidade-produto .quantidade-disponivel {
+    padding: 5px;
+}
+
+.card .frete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    margin-top: 8px;
+}
+
+.card-resumo-compra {
+    width: 300px;
+    /* box-shadow: 0 0 5px black; */
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    height: min-content;
+}

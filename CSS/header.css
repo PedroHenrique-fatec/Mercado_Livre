@@ -1,117 +1,113 @@
 /* Estilo para o modal (inicialmente escondido) */
 .modal {
-    display: none;
-    position: absolute; /* Modal ficará posicionado em relação ao pai */
-    background-color: black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 15px;
-    z-index: 1000; /* Para garantir que o modal fique por cima de outros elementos */
-    top: 100px;
+  display: none;
+  position: absolute; /* Modal ficará posicionado em relação ao pai */
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 15px;
+  z-index: 1000; /* Para garantir que o modal fique por cima de outros elementos */
+  transition: 1s ease-in-out;
 }
 
 .modal ul li {
-    padding: 6px;
-    border-bottom: 1px silver;
-}
-
-#modal_categoria {
-    left: 320px;
+  padding: 6px;
+  border-bottom: 1px silver;
 }
 
 #modal_favorito {
-    right: 130px;
+  right: 130px;
 }
 
 #modal_favorito .modal-link {
-    width: 200px;
+  width: 200px;
 }
 
 /* Adiciona animação de transição suave */
 nav .modal-link {
-    list-style-type: none;
-    display: block;
-    padding: 0;
-    margin: 0;
-    width: 150px;
-    height: 320px;
-    overflow: auto;
+  list-style-type: none;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  height: 320px;
+  overflow: auto;
 }
 
 /* Estilos de base para o layout */
 header {
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
-    place-items: center;
-    background-color: yellow;
-    padding: 15px 0;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  place-items: center;
+  background-color: yellow;
+  padding: 15px 10%;
+  gap: 20px;
 }
 
 header .logo span {
-    color: blue;
-    font-size: 15px;
+  color: blue;
+  font-size: 15px;
 }
 
 header .pesquisa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .pesquisa input {
-    width: 500px;
-    height: 30px;
-    padding: 2px 8px;
+  width: 500px;
+  height: 30px;
+  padding: 15px 12px;
 }
 
 header .pesquisa .icone {
-    transform: translateX(-25px);
+  transform: translateX(-25px);
 }
 
 header .oferta-plano .texto {
-    padding: 8px;
-    border-radius: 15px 15px 15px 0;
-    background-color: rgb(122, 6, 230);
-    color: white;
+  padding: 8px;
+  border-radius: 15px 15px 15px 0;
+  background-color: rgb(122, 6, 230);
+  color: white;
 }
 
 header .localizacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav {
-    min-width: 500px;
-    width: 100%;
+  min-width: 500px;
+  width: 100%;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
 header nav ul li {
-    margin: 0 7px;
-    position: relative; /* Para o modal ficar em relação ao item pai */
+  margin: 0 7px;
+  position: relative; /* Para o modal ficar em relação ao item pai */
 }
 
 header .usuario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header .usuario .usuario-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
 header .usuario .usuario-link li {
-    margin: 0 7px;
+  margin: 0 7px;
 }
