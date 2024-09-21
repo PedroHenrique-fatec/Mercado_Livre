@@ -5,42 +5,49 @@ main {
 }
 
 .card {
-    width: 700px;
+    width: 640px;
     /* box-shadow: 0 0 5px black; */
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin: 15px 0;
+    border-radius: 5px;
     background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .1);
+    margin-bottom: 10px;
 }
+
 
 .card .nome-loja {
     padding: 6px 10px;
-    padding-bottom: 15px;
+    padding: 11px 15px;
     font-size: 15px;
 }
 
-.card .nome-loja::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 700px;
+.separator {
+    background-color: rgba(0, 0, 0, .1);
+    margin: 0;
     height: 1px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    transform: translateX(-28px);
-    background-color: silver;
+    width: 100%;
 }
 
 .card .produto {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 350px) 1fr 1fr;
     /* align-items: center; */
+    padding: 5px 15px;
+    margin-top: 15px;
+}
+
+.card .produto .img {
+    width: min-content;
+}
+
+.card .produto .nome-produto {
+    margin-top: 6px;
 }
 
 .card .quantidade-produto {
     display: grid;
     place-items: center;
-
+    margin-left: -80px;
+    font-size: 12px;
 }
 
 .card .quantidade-produto .button-quantidade {
@@ -65,24 +72,64 @@ main {
 
 .card .quantidade-produto .quantidade-disponivel {
     padding: 5px;
+    font-size: 12px;
+}
+
+.card .produto .preco-produto {
+    display: flex;
+    justify-content: end;
+    margin-top: 6px;
+
 }
 
 .card .frete {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 12px;
-    margin-top: 8px;
+    padding: 10px 20px;
 }
 
 .card-resumo-compra {
     width: 300px;
     /* box-shadow: 0 0 5px black; */
-    border-radius: 10px;
-    margin-left: 40px;
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
     background-color: white;
     height: min-content;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .1);
+}
+
+.card-resumo-compra .title-card {
+    font-size: 15px;
+    padding: 15px 19px;
+}
+
+.card-resumo-compra .valores {
+    padding: 15px 19px;
+}
+
+.card-resumo-compra .valores > div {
+    /* margin-bottom: 4px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.card-resumo-compra .valores .valor-total {
+    margin-top: 5px;
+}
+
+.card-resumo-compra .button {
+    padding: 0 19px 15px 19px;
+}
+
+.card-resumo-compra .button button {
+    color: white;
+    background-color: blue;
+    font-size: 14px;
+    padding: 12px 8px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
 }

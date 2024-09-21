@@ -39,8 +39,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
   place-items: center;
-  background-color: yellow;
-  padding: 15px 10%;
+  background-color: #ffe600;
+  padding: 7px 10%;
   gap: 20px;
 }
 

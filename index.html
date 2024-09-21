@@ -144,6 +144,7 @@
       <section class="produtos-carrinho">
         <div class="card">
           <div class="nome-loja">Produtos de Nintendo</div>
+          <div class="separator"></div>
           <div class="produto">
             <div class="img">
               <img src="Imagens/primeiro produto.jpg" alt="Joystick de console" />
@@ -158,16 +159,16 @@
             </div>
             <div class="quantidade-produto">
               <div class="button-quantidade">
-                <button id="subtrair" disabled>-</button>
-                <div id="quantidade">1</div>
-                <button id="adicionar">+</button>
+                <button class="subtrair 1">-</button>
+                <div class="quantidade 1">1</div>
+                <button class="adicionar 1">+</button>
               </div>
               <div class="quantidade-disponivel">
                 <span>50+ disponíveis</span>
               </div>
             </div>
             <div class="preco-produto">
-              R$ 35,55
+              <span class="preco">R$ 35,55</span>
             </div>
           </div>
           <div class="frete">
@@ -177,6 +178,7 @@
         </div>
         <div class="card">
           <div class="nome-loja">Produtos de Sony</div>
+          <div class="separator"></div>
           <div class="produto">
             <div class="img">
               <img src="Imagens/segundo produto.jpg" alt="Lote de jogos ps4" />
@@ -191,16 +193,16 @@
             </div>
             <div class="quantidade-produto">
               <div class="button-quantidade">
-                <button id="subtrair">-</button>
-                <div id="quantidade">1</div>
-                <button id="adicionar">+</button>
+                <button class="subtrair 2">-</button>
+                <div class="quantidade 2">1</div>
+                <button class="adicionar 2">+</button>
               </div>
               <div class="quantidade-disponivel">
                 <span>50+ disponíveis</span>
               </div>
             </div>
             <div class="preco-produto">
-              R$ 579,98
+              <span class="preco">R$ 579,98</span>
             </div>
           </div>
           <div class="frete">
@@ -210,6 +212,7 @@
         </div>
         <div class="card">
           <div class="nome-loja">Produtos de Intel</div>
+          <div class="separator"></div>
           <div class="produto">
             <div class="img">
               <img src="Imagens/terceiro produto.jpg" alt="Console Playstation 5" />
@@ -224,16 +227,16 @@
             </div>
             <div class="quantidade-produto">
               <div class="button-quantidade">
-                <button id="subtrair">-</button>
-                <div id="quantidade">1</div>
-                <button id="adicionar">+</button>
+                <button class="subtrair 3">-</button>
+                <div class="quantidade 3">1</div>
+                <button class="adicionar 3">+</button>
               </div>
               <div class="quantidade-disponivel">
                 <span>50+ disponíveis</span>
               </div>
             </div>
             <div class="preco-produto">
-              R$ 3.531.60
+              <span class="preco">R$ 3.531.60</span>
             </div>
           </div>
           <div class="frete">
@@ -245,10 +248,11 @@
 
       <section class="card-resumo-compra">
         <div class="title-card">Resumo da compra</div>
+        <div class="separator"></div>
         <div class="valores">
           <div class="produtos-contagem">
             <div class="produtos-quant">produtos (<span id="quant"></span>)</div>
-            <div class="valor">RS$ <span id="valor"></span></div>
+            <div class="valor">R$ <span id="valor"></span></div>
           </div>
           <div class="frete-contagem">
             <div class="frete-quant">frete <span>(3)</span></div>
