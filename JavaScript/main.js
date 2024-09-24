@@ -1,4 +1,4 @@
-let allCards = document.querySelectorAll(".card");
+let allCards = document.querySelectorAll(".produtos-carrinho .card");
 
 function quantidadeProduto() {
   allCards.forEach(function (card) {
@@ -65,3 +65,4 @@ function atualizarValorTotal() {
 quantidadeProduto();
 atualizarQuantidadeTotal();
 atualizarValorTotal();
+
