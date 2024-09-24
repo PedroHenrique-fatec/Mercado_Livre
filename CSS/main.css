@@ -43,6 +43,12 @@ main {
 
 .carrinho-compra .card .produto .img {
   width: min-content;
+  margin-right: 15px;
+}
+
+.carrinho-compra .card .produto .img img {
+  width: 70px;
+  height: 70px;
 }
 
 .carrinho-compra .card .produto .nome-produto {
@@ -154,8 +160,81 @@ main {
   font-size: 18px;
 }
 
-.slider {
+/* Estilo da seção do slider */
+.slider-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 12px 15px;
+  overflow: hidden;
+}
+
+.button-previous,
+.button-next {
+  flex-shrink: 0;
+}
+
+.button-previous button,
+.button-next button {
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px blue;
+  margin: 0 6px;
+}
+
+/* Wrapper para esconder o conteúdo fora da tela */
+.slider-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.slider-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* padding: 16px; */
+}
+
+/* Estilos para os cards */
+.card {
+  flex: 0 0 20%; /* Cada card ocupa 20% da largura do container */
+  margin: 0 8px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card .img {
+  padding: 5px;
+}
+
+.card .img img {
+  width: 100%;
+  height: 150px;
+}
+
+.card .text {
+  padding: 7px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .card {
+    flex: 0 0 40%; /* Cada card ocupa 40% em telas menores */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    flex: 0 0 80%; /* Cada card ocupa 80% em telas bem pequenas */
+  }
 }

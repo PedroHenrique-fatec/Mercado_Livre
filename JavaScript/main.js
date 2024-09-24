@@ -58,11 +58,37 @@ function atualizarValorTotal() {
   let soma = document.getElementById("valor");
   soma.innerText = ` ${valorTotal.toFixed(2).replace(".", ",")}`;
 
-  let valorTotalCompra = document.getElementById('valor-total')
-  valorTotalCompra.innerText = `R$ ${valorTotal.toFixed(2).replace('.', ',')}`
+  let valorTotalCompra = document.getElementById("valor-total");
+  valorTotalCompra.innerText = `R$ ${valorTotal.toFixed(2).replace(".", ",")}`;
 }
 
 quantidadeProduto();
 atualizarQuantidadeTotal();
 atualizarValorTotal();
 
+let slider = document.querySelector(".slider-carousel");
+let nextButton = document.getElementById("next");
+let prevButton = document.getElementById("previous");
+
+let currentPosition = 0;
+let card = document.querySelector(".slider-carousel .card");
+let propriedadesCard = card.getBoundingClientRect();
+
+let cardWidth = propriedadesCard.width + 76;
+
+nextButton.addEventListener("click", () => {
+  if (currentPosition < 1815) {
+    currentPosition += cardWidth;
+    slider.style.transform = `translateX(-${currentPosition}px)`;
+    console.log(currentPosition);
+  } else {
+    currentPosition = 0 - cardWidth;
+  }
+});
+
+prevButton.addEventListener("click", () => {
+  if (currentPosition > 0) {
+    currentPosition -= cardWidth;
+    slider.style.transform = `translateX(-${currentPosition}px)`;
+  }
+});
