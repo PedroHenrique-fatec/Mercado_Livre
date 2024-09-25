@@ -2,12 +2,14 @@
 .modal {
   display: none;
   position: absolute; /* Modal ficará posicionado em relação ao pai */
-  background-color: black;
+  background-color: rgba(24, 18, 18, 0.8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 15px;
   z-index: 1000; /* Para garantir que o modal fique por cima de outros elementos */
   transition: 1s ease-in-out;
+  z-index: 1002;
+  margin-top: 6px;
 }
 
 .modal ul li {
@@ -16,7 +18,24 @@
 }
 
 #modal_favorito {
-  right: 130px;
+  right: 230px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  border: none;
+  color: black;
+}
+
+#modal_favorito .usuario-modal {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#modal_favorito ul {
+  list-style-type: none;
+}
+
+#modal_favorito a {
+  text-decoration: none;
 }
 
 #modal_favorito .modal-link {
@@ -30,8 +49,12 @@ nav .modal-link {
   padding: 0;
   margin: 0;
   width: 150px;
-  height: 320px;
-  overflow: auto;
+  height: auto;
+}
+
+nav .modal-link a {
+  text-decoration: none;
+  color: #f5f5f5;
 }
 
 /* Estilos de base para o layout */
@@ -42,6 +65,7 @@ header {
   background-color: #ffe600;
   padding: 7px 10%;
   gap: 20px;
+  z-index: 1002;
 }
 
 header .logo span {

@@ -92,3 +92,4 @@ prevButton.addEventListener("click", () => {
     slider.style.transform = `translateX(-${currentPosition}px)`;
   }
 });
+

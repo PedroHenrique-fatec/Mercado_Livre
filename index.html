@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="CSS/global.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
 
     <title>Mercado Livre</title>
   </head>
   <body>
+    <div id="overlay"></div>
+
     <header>
       <div class="logo">
         <span>Mercado Livre</span>
@@ -96,8 +99,8 @@
             <div class="modal" id="modal_favorito">
               <div class="modal-header">
                 <div class="user">
-                  <a href="index.html">
-                    <div class="icone">
+                  <a class="usuario-modal" href="index.html">
+                    <div class="icone" style="margin-right: 5px;">
                       <i class="fa-solid fa-user-tie"></i>
                     </div>
                     <div class="text">
@@ -118,9 +121,11 @@
                   <li><a href="index.html">exemplo</a></li>
                   <li><a href="index.html">exemplo</a></li>
                   <li><a href="index.html">exemplo</a></li>
+                  <div class="separator"></div>
                   <li><a href="index.html">exemplo</a></li>
                   <li><a href="index.html">exemplo</a></li>
                   <li><a href="index.html">exemplo</a></li>
+                  <div class="separator"></div>
                   <li><a href="index.html">exemplo</a></li>
                   <li><a href="index.html">exemplo</a></li>
                   <li><a href="index.html">exemplo</a></li>
@@ -139,6 +144,7 @@
         </ul>
       </div>
     </header>
+
 
     <main>
       <section class="carrinho-compra">
@@ -645,7 +651,89 @@
       </section>
     </main>
 
+    <footer>
+      <section class="button-section">
+        <div class="button-box">
+          <button>informações <i class="fa-solid fa-angle-down"></i></button>
+        </div>
+      </section>
+      <section class="nav-footer">
+        <div class="nav-content-info hidden">
+          <ul>
+            <li class="title-ul-footer">Sobre o</li>
+            <li><a href="">mercado livre</a></li>
+            <li><a href="">Investor relations</a></li>
+            <li><a href="">Tendências</a></li>
+            <li><a href="">Sustentabilidade</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+          <ul>
+            <li class="title-ul-footer">Outros sites</li>
+            <li><a href="">Desenvolvedores</a></li>
+            <li><a href="">Mercado pago</a></li>
+            <li><a href="">Envio</a></li>
+            <li><a href="">Mercado shops</a></li>
+            <li><a href="">mercado ads</a></li>
+          </ul>
+          <ul>
+            <li class="title-ul-footer">contato</li>
+            <li><a href="">comprar</a></li>
+            <li><a href="">vender</a></li>
+            <li><a href="">solução de problemas</a></li>
+            <li><a href="">segurança</a></li>
+          </ul>
+          <ul>
+            <li class="title-ul-footer">redes sociais</li>
+            <li><a href="">x</a></li>
+            <li><a href="">facebook</a></li>
+            <li><a href="">instagram</a></li>
+            <li><a href="">youTube</a></li>
+          </ul>
+          <ul>
+            <li class="title-ul-footer">minha conta</li>
+            <li><a href="">resumo</a></li>
+            <li><a href="">favoritos</a></li>
+            <li><a href="">vender</a></li>
+          </ul>
+          <ul>
+            <li class="title-ul-footer">assinaturas</li>
+            <li><a href="">meli+</a></li>
+            <li><a href="">disney+</a></li>
+            <li><a href="">deezer premium</a></li>
+            <li><a href="">max</a></li>
+            <li><a href="">paramout+</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="copyright-box">
+        <div class="copyright-center">
+          <ul>
+            <li>trabalhe conosco</li>
+            <li>termos e condições</li>
+            <li>promoções</li>
+            <li>como cuidamos da sua privacidade</li>
+            <li>acessibilidade</li>
+            <li>contato</li>
+            <li>informações sobre seguro</li>
+            <li>programas de afiliados</li>
+            <li>black friday</li>
+          </ul>
+
+          <div class="copyright">
+            <p>Copyright © 1999-2024 Ebazar.com.br LTDA.</p>
+            <p>
+              CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003,
+              Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado
+              Livre.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </footer>
+
     <script src="JavaScript/header.js"></script>
     <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/footer.js"></script>
   </body>
 </html>

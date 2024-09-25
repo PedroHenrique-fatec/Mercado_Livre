@@ -1,14 +1,18 @@
 let categoria = document.getElementById("categoria");
 let modalCategoria = document.getElementById("modal_categoria");
 
+let overlay = document.getElementById('overlay')
+
 // Função para exibir o modal
 function modalVisibleCategoria() {
   modalCategoria.style.display = "block";
+  overlay.style.display = 'block'
 }
 
 // Função para ocultar o modal
 function modalInvisibleCategoria() {
   modalCategoria.style.display = "none";
+  overlay.style.display = 'none'
 }
 
 // Mostrar modal quando o mouse passar por cima de 'categoria'
@@ -23,11 +27,15 @@ let modalFavorito = document.getElementById("modal_favorito");
 // Função para exibir o modal
 function modalVisibleFavorito() {
   modalFavorito.style.display = "block";
+  overlay.style.display = 'block'
+
 }
 
 // Função para ocultar o modal
 function modalInvisibleFavorito() {
   modalFavorito.style.display = "none";
+  overlay.style.display = 'none'
+
 }
 
 // Mostrar modal quando o mouse passar por cima de 'favorito'
